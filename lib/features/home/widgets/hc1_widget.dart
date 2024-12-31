@@ -1,4 +1,5 @@
 import 'package:fam_assignment/core/custom_spacers.dart';
+import 'package:fam_assignment/core/network_helpers.dart';
 import 'package:fam_assignment/core/screen_utils.dart';
 import 'package:fam_assignment/features/home/models/hc1_model.dart' as hc1;
 import 'package:flutter/material.dart';
@@ -24,7 +25,13 @@ class _Hc1WidgetState extends State<Hc1Widget> {
                 itemCount: widget.data.cards.length,
                 itemBuilder: (context, index) {
                   final card = widget.data.cards[index];
-                  return _buildCard(card);
+                  return GestureDetector(
+                      onTap: () {
+                        //  NetworkHelpers.launchUrl(
+                        //       url: widget.data.cards[index].url,
+                        //       errorCallback: () {});
+                      },
+                      child: _buildCard(card));
                 },
               )
             : Row(

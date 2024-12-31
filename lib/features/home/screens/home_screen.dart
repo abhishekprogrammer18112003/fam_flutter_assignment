@@ -6,7 +6,6 @@ import 'package:fam_assignment/core/screen_utils.dart';
 import 'package:fam_assignment/features/home/data/home_provider.dart';
 import 'package:fam_assignment/features/home/models/hc3_model.dart';
 import 'package:fam_assignment/features/home/models/hc6_model.dart';
-import 'package:fam_assignment/features/home/models/home_model.dart';
 import 'package:fam_assignment/features/home/widgets/cta_buttons.dart';
 import 'package:fam_assignment/features/home/widgets/hc1_widget.dart';
 import 'package:fam_assignment/features/home/widgets/hc3_widget.dart';

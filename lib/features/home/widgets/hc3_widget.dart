@@ -1,5 +1,6 @@
 import 'package:fam_assignment/core/app_images.dart';
 import 'package:fam_assignment/core/custom_spacers.dart';
+import 'package:fam_assignment/core/network_helpers.dart';
 import 'package:fam_assignment/core/screen_utils.dart';
 import 'package:fam_assignment/features/home/models/hc3_model.dart' as hc3;
 import 'package:fam_assignment/features/home/widgets/cta_buttons.dart';
@@ -175,12 +176,19 @@ class _Hc3WidgetState extends State<Hc3Widget> {
                       card.formattedTitle.entities,
                     ),
                     CustomSpacers.height40,
-                    CTAButton(
-                        text: card.cta[0].text,
-                        bgColor: card.cta[0].bgColor,
-                        isCircular: card.cta[0].isCircular,
-                        isSecondary: card.cta[0].isSecondary,
-                        strokeWidth: card.cta[0].strokeWidth.toDouble())
+                    GestureDetector(
+                      onTap: () {
+                        NetworkHelpers.launchUrl(
+                            url: widget.data.cards[index].url,
+                            errorCallback: () {});
+                      },
+                      child: CTAButton(
+                          text: card.cta[0].text,
+                          bgColor: card.cta[0].bgColor,
+                          isCircular: card.cta[0].isCircular,
+                          isSecondary: card.cta[0].isSecondary,
+                          strokeWidth: card.cta[0].strokeWidth.toDouble()),
+                    )
                   ],
                 ),
               ),
