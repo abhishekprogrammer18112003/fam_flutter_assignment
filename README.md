@@ -51,3 +51,4 @@ lib
 
 
 Build apk path - > build\app\outputs\flutter-apk\app-release.apk
+Download apk from here - > https://drive.google.com/file/d/1qzRgg2D2GkXWbmV-rLxdk1J4q-qpC8F4/view
