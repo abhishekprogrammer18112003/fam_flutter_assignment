@@ -18,6 +18,7 @@ lib
       - screen_utils.dart    // It includes screen utils with dynamic sizes
       - url_constants.dart    //  This include all the urls for now we have only one.
       - value_constants.dart   // This file includes default sizes
+      - network_helper.dart   // This contain the function launch url
         
   - features   // contains all the screens 
       - home   // first screen and only feature that is included in this feature
@@ -42,3 +43,11 @@ lib
              - hc9_widget.dart
           
   - main.dart //Initialization of the project. 
+
+
+
+
+
+
+
+Build apk path - > build\app\outputs\flutter-apk\app-release.apk
